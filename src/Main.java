@@ -58,7 +58,7 @@ public class Main {
             // Добавляем товар в корзину
             if (selectedProduct != null) {
                 cart.add(selectedProduct);
-                System.out.println("Товар добавлен: " + selectedProduct.getName());
+                System.out.printf("Товар добавлен: %s%n", selectedProduct.getName());
             } else {
                 System.out.println("Товар с таким номером не найден.");
             }
@@ -74,7 +74,7 @@ public class Main {
                 System.out.println(product);
                 totalCost += product.getPrice();
             }
-            System.out.println("Итоговая сумма: " + totalCost + "euro");
+            System.out.printf("Итоговая сумма: %s euro %n", totalCost);
         }
     }
 
